@@ -77,9 +77,63 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
+
+        <!-- Js Questionnaires -->
+        <article>
+            <section class="container mt-5 pt-5 " id="posts1">
+                <div class="row">
+                    <h1 class="mb-5 text-center" style="font-weight: 600;">Javascript Questionnaires</h1>
+                    <div class="col-lg-6 col-sm-12 col-md-12 col-12">
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item mb-3 shadow-lg">
+                              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    How does Javascript work? 
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                  <strong>JS works:</strong> JS is mainly a single-threaded interpreted programming language. This refers to JS executing one instruction or a part of code in a single time sequence. JS ensures dynamic typing while runtime. By nature, JS is synchronous. JS maintains order and runs code top to bottom manner. But in case of asynchronous operation, the servers await for a network request in a loop and accepts further requests when the first one is being processed.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item mb-3 shadow-lg">
+                              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    What does Event Loop do?
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                  <strong>Event Loop:</strong> As we know JS is synchronous. But in the case of an asynchronous operation, event loop comes in. It continuously checks if there's anything to execute in the call stack, otherwise, it checks the callback queue. If something is in the callback queue, the event loop will move it to the call stack -  if only the call stack remains empty! So the event loop is a never-ending process whose sole purpose is to monitor and transmit methods from the event queue to the call stack. 
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item mb-3 shadow-lg">
+                              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    WHy LocalStorage & SessionStorage is different?
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                  <strong>LocalStorage vs SessionStorage:</strong> Both localStorage & sessionStorage is similiar in manner. But, difference occurs in case of accessing & storing data. <br> 1. LocalStorage can be accessed by any browser window. <br> 2. SessionStorage can only be accesed within same tab or window. <br>
+                                  3. LocalStorage stores data with no expiry but can be deleted manually if needed. <br> 4. Stored data in SessionStorage gets cleared when a session ends.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 col-md-12 col-12">
+                        <img class="img-fluid" src="images/js1.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+        </article>
         <footer></footer>
 
         <!-- add javascript  file  -->
         <script src="./js/app.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
